@@ -3,7 +3,8 @@
     Form
   </h1>
   <app-yes-no-button-group
-    [value]="yesNoAnswer"
+    [(value)]="yesNoAnswer"
     label="Are you good enough in Angular?"
   ></app-yes-no-button-group>
+  <p>Valor atual da yesNoAnswer => {{ yesNoAnswer }} </p>
 </main>

@@ -4,11 +4,15 @@
   </label>
   <button
     class="button button-yes"
+    [class.button-pressed]="getActivate(options.YES)"
+    (click)="setActivate(options.YES)"
     type="button">
     Yes
   </button>
   <button
     class="button button-no"
+    [class.button-pressed]="getActivate(options.NO)"
+    (click)="setActivate(options.NO)"
     type="button">
     No
   </button>
